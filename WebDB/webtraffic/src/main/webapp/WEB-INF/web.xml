@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+
+
+    <servlet>
+        <servlet-name>Start</servlet-name>
+        <servlet-class>ru.chernishov.webtraffic.Start</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Start</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DBUrl</servlet-name>
+        <servlet-class>ru.chernishov.webtraffic.Dburl</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DBUrl</servlet-name>
+        <url-pattern>/createdb</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>createdb</servlet-name>
+        <servlet-class>ru.chernishov.webtraffic.Createdb</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>createdb</servlet-name>
+        <url-pattern>/select</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>selectfromdb</servlet-name>
+        <servlet-class>ru.chernishov.webtraffic.Selectfromdb</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>selectfromdb</servlet-name>
+        <url-pattern>/answer</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
